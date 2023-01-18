@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulaire</title>
+    <style> 
+      fieldset
+      {
+     max-width:700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      input[type=button], input[type=submit], input[type=reset] {
+
+  background-color: white;
+  border: solid 1px;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+label.align {
+        display: inline-block;
+        width: 70px;
+        text-align: left;
+      }
+input:focus { 
+
+  color: red;
+  font-weight: bold;
+}
+textarea:focus { 
+
+color: blue;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+  <h3 style="text-align:center">Formulaire de Contact</h3>
+
+    <fieldset> 
+      <form action="fonctionne.html" method="get" id="myform">
+        
+      <label for ="nomform" class="align">Nom</label>
+      <input id ="nomform" type="text" size="10" name="nomform"> 
+      <br>
+      <label for ="Courrielform" class="align">Courriel</label> 
+      <input id ="courriel" type="text"  size="10"> 
+      <br>
+      <label for ="telephone" class="align">Téléphone</label> 
+      <input id ="telephone" type="text" value="+1" size="10">  &nbsp;(facultatif)
+       <br>
+        <label for="titremsg">Titre du message</label>
+        <select name="Titre_du_message" id="menucinqoptions">
+          <option value="default">Choisissez un titre</option>
+          <option value="un">Information sur un produit</option>
+          <option value="deux">Information sur une commande</option>
+          <option value="trois">Demande de devis</option>
+          <option value="quatre">Signaler un bug</option>
+          <option value="cinq">Autre</option>
+        </select>
+       
+        <input type="text" id="titremsgvide" name="Vide">
+        <label for="Vide"></label>
+ 
+        <p>Message :</p>
+        <textarea name="message" id ="message" rows="10" cols="50"></textarea> <br>
+        <br>
+        Notes sur le site
+        <input type="radio" id="nul" name="notesite" value="NUL">
+        <label for="NUL">Nul</label> &nbsp; - 
+       <input type="radio" id="insuffisant" name="notesite" value="Insuffisant">
+       <label for="insuffisant">Insuffisant</label> &nbsp; - 
+        <input type="radio" id="moyen" name="notesite" value="Moyen">
+       <label for="Moyen">Moyen</label> &nbsp; - 
+           <input type="radio" id="bon" name="notesite" value="Bon">
+       <label for="Bon">Bon</label> &nbsp; - 
+            <input type="radio" id="tresbon" name="notesite" value="Très bon">
+            <label for="Tresbon">Très bon</label>
+           <br>
+           <br> <br>
+           <input type="checkbox" id="newsletter" name="newsletter">
+           <label for="newsletter"> Recevoir la newsletter</label><br>
+           <br>
+  
+  
+        <button type="submit" id="submit">Envoyer </button>
+    </form>
+      </fieldset>
+
+</body>
+</html>
+<script src ="two.js"> </script>
